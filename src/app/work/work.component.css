@@ -1,0 +1,41 @@
+.subpanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.subpanel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: left;
+  align-items: top; */
+  width: 100%;
+}
+
+/* .subpanel-item-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+} */
+
+.nav {
+  padding: 5px;
+}
+
+a {
+  border: solid gray 2px;
+  color: gray;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.active {
+  border: solid black 2px;
+  color: black;
+  font-weight: bold;
+  background-color: #e6f5fa;
+}

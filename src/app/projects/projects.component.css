@@ -1,0 +1,15 @@
+mat-card {
+  margin: 10px;
+  padding-bottom: 10px;
+  width: 70%;
+  cursor: pointer;
+}
+
+mat-card:hover {
+  font-weight: bold;
+}
+
+.example-container {
+  padding: 16px;
+  margin-bottom: 16px;
+}

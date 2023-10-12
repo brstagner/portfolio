@@ -1,0 +1,20 @@
+<div class="panel">
+  <div class="subpanel">
+    <div class="subpanel-item">
+      <a class="nav" (click)="showProjects()" [ngClass]="{ active: projects }"
+        >projects</a
+      >
+      <a class="nav" (click)="showResume()" [ngClass]="{ active: !projects }"
+        >résumé</a
+      >
+    </div>
+    <div class="subpanel-item">
+      <ng-container *ngIf="projects; else resume">
+        <app-projects />
+      </ng-container>
+      <ng-template #resume>
+        <app-resume />
+      </ng-template>
+    </div>
+  </div>
+</div>

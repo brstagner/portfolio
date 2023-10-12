@@ -1,0 +1,31 @@
+img {
+  height: 20px;
+  width: 20px;
+}
+
+button {
+  border: none;
+  background-color: none;
+}
+
+div {
+  margin-top: 5px;
+}
+
+a:active {
+  border: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button:focus {
+  outline: none !important;
+  background-color: none !important;
+}
+
+a:focus {
+  outline: none !important;
+  background-color: none !important;
+}
