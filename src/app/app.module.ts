@@ -28,6 +28,8 @@ import {
 } from '@angular/material/tree';
 import { MatIconModule } from '@angular/material/icon';
 
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 import {
   MatDialog,
   MatDialogRef,
@@ -60,6 +62,7 @@ import { ProjectDialogComponent } from './project-dialog/project-dialog.componen
     MatDialogModule,
     MatTreeModule,
     MatIconModule,
+    PdfViewerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -6,13 +6,24 @@
   width: 100%;
 }
 
-.subpanel-item {
+.subpanel-left {
   display: flex;
   justify-content: center;
   align-items: center;
   /* justify-content: left;
   align-items: top; */
-  width: 100%;
+  width: 30vw;
+  height: 70vh;
+}
+
+.subpanel-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: left;
+  align-items: top; */
+  width: 70vw;
+  height: 70vh;
 }
 
 /* .subpanel-item-nav {

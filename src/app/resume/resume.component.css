@@ -34,3 +34,7 @@ mat-tree {
   width: 45vw;
   background-color: #faf0e6;
 }
+
+pdf-viewer {
+  width: 100%;
+}

@@ -50,7 +50,7 @@ const TREE_DATA: ResumeNode[] = [
     name: 'Education',
     children: [
       {
-        name: 'Springboard /n Certification, Software Engineering | 2022 - 2023',
+        name: 'Springboard | Certification, Software Engineering | 2022 - 2023',
       },
       {
         name: 'Washington University in Saint Louis',
@@ -80,4 +80,6 @@ export class ResumeComponent {
 
   hasChild = (_: number, node: ResumeNode) =>
     !!node.children && node.children.length > 0;
+
+  pdfSrc = '../../assets/img/resume.pdf';
 }
