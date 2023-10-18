@@ -9,6 +9,9 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class ProjectCardComponent {
   @Input() image: string = 'default image data';
+  @Input() headerBgColor: string = 'default header background color data';
+  @Input() headerTextColor: string = 'default header text color data';
+  @Input() headerFont: string = 'default header font data';
   @Input() name: string = 'default name data';
   @Input() description: string = 'default description data';
   @Input() tools: string = 'default tools data';
@@ -21,6 +24,9 @@ export class ProjectCardComponent {
     const dialogRef = this.dialog.open(ProjectDialogComponent, {
       data: {
         image: this.image,
+        headerBgColor: this.headerBgColor,
+        headerTextColor: this.headerTextColor,
+        headerFont: this.headerFont,
         name: this.name,
         description: this.description,
         tools: this.tools,

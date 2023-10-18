@@ -1,6 +1,10 @@
+<div class="projects-panel">
 <app-project-card
   *ngFor="let cardData of cardDataArray"
   [image]="cardData.image"
+  [headerBgColor]="cardData.headerBgColor"
+  [headerTextColor]="cardData.headerTextColor"
+  [headerFont]="cardData.headerFont"
   [name]="cardData.name"
   [description]="cardData.description"
   [tools]="cardData.tools"
@@ -8,3 +12,4 @@
   [github]="cardData.github"
 >
 </app-project-card>
+</div>

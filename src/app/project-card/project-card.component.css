@@ -1,18 +1,12 @@
 mat-card {
   margin: 10px;
-  padding-bottom: 10px;
-  width: 70%;
-  cursor: pointer;
-  /* background-color: #faf0e6; */
-  /* background-color: #e6f5fa; */
-  background-color: #f1d6bb;
+  /* cursor: pointer; */
 }
 
-mat-card:hover {
+/* mat-card:hover {
   font-weight: bold;
-}
+} */
 
-img {
-  height: 20px;
-  width: 20px;
+mat-card-content div {
+  margin-top: 5%
 }

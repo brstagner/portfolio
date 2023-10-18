@@ -10,6 +10,9 @@ export class ProjectsComponent {
 
   cardDataArray: {
     image: string;
+    headerBgColor: string;
+    headerTextColor: string;
+    headerFont: string;
     name: string;
     description: string;
     tools: string;
@@ -18,6 +21,9 @@ export class ProjectsComponent {
   }[] = [
     {
       image: '../../assets/img/flower.png',
+      headerBgColor: 'teal',
+      headerTextColor: 'white',
+      headerFont: 'Caprasimo',
       name: 'Gardener',
       description: 'Node.js app for planning a flower garden',
       tools: 'React, Express, Postgres',
@@ -26,11 +32,14 @@ export class ProjectsComponent {
     },
     {
       image: '../../assets/img/campco.png',
+      headerBgColor: '#b13c1f',
+      headerTextColor: 'white',
+      headerFont: 'Red Hat Display',
       name: 'Campaign Coordinator',
       description: 'Flask app for coordinating tabletop rpgs',
       tools: 'Flask, Jinja, Postgres',
-      url: '',
-      github: '',
+      url: 'http://campco.brstagner.com/',
+      github: 'https://github.com/brstagner/campco',
     },
   ];
 }

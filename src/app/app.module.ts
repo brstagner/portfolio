@@ -2,6 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import {
+  BrowserAnimationsModule,
+  provideAnimations,
+} from '@angular/platform-browser/animations';
+import 'hammerjs';
+
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
@@ -9,8 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatList } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { CarouselModule } from '@coreui/angular';
 import { MatButtonModule } from '@angular/material/button';
@@ -27,6 +33,7 @@ import {
   MatTreeNode,
 } from '@angular/material/tree';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 
@@ -63,8 +70,9 @@ import { ProjectDialogComponent } from './project-dialog/project-dialog.componen
     MatTreeModule,
     MatIconModule,
     PdfViewerModule,
+    MatListModule,
   ],
-  providers: [],
+  providers: [provideAnimations()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

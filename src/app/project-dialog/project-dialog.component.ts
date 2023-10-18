@@ -8,6 +8,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class ProjectDialogComponent {
   image: string = 'default image data';
+  background: string = 'default background data';
   name: string = 'default name data';
   description: string = 'default description data';
   tools: string = 'default tools data';
@@ -23,6 +24,7 @@ export class ProjectDialogComponent {
     @Inject(MAT_DIALOG_DATA)
     public data: {
       image: string;
+      background: string;
       name: string;
       description: string;
       tools: string;

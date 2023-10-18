@@ -1,27 +1,46 @@
 body {
-  background-color: #faf0e6;
+  /* background-color: #faf0e6; */
+  /* background-color: black; */
   /* font-family: "Red Hat Text"; */
   font-family: "Tenor Sans";
   font-size: large;
   /* height: 100vh; */
+  /* color: white */
 }
 
 svg {
   padding-right: 5px;
+  /* fill: white */
 }
 
 .app-root {
   height: 100%;
 }
 
-.panel {
+.about-panel {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* outline: solid 2px black; */
   width: 100%;
   height: 80vh;
+}
+
+.projects-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+app-project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .copy {
@@ -45,4 +64,8 @@ svg {
 a {
   color: black;
   text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
